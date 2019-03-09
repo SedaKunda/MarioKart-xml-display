@@ -1,0 +1,28 @@
+<!ENTITY % stats "(name,speed,accel,weight,handling,traction,M-turbo)">
+<!ENTITY % terrain "(land,anti-g,water,air)">
+
+<!ELEMENT mariokart (characters,bodies,gliders,tires)>
+
+<!ELEMENT characters (character)+>
+<!ELEMENT bodies (body)+>
+<!ELEMENT gliders (glider)+>
+<!ELEMENT tires (tire)+>
+<!ELEMENT character %stats;>
+<!ELEMENT body %stats;>
+<!ELEMENT glider %stats;>
+<!ELEMENT tire %stats;>
+
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT speed %terrain;>
+<!ELEMENT accel (#PCDATA)>
+<!ELEMENT weight (#PCDATA)>
+<!ELEMENT handling %terrain;>
+<!ELEMENT traction (#PCDATA)>
+<!ELEMENT M-turbo (#PCDATA)>
+
+<!ELEMENT land (#PCDATA)>
+<!ELEMENT anti-g (#PCDATA)>
+<!ELEMENT water (#PCDATA)>
+<!ELEMENT air (#PCDATA)>
+
+
